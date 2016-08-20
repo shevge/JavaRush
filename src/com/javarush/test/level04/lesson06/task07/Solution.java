@@ -8,8 +8,6 @@ package com.javarush.test.level04.lesson06.task07;
 Пример для чисел 6 6 3:
 3
 */
-
-import java.io.*;
 import java.util.Scanner;
 
 public class Solution {
@@ -19,11 +17,11 @@ public class Solution {
         int b = scanner.nextInt();
         int c = scanner.nextInt();
 
+        if (a != c && b == c)
+            System.out.println(1);
         if (a != b && a == c)
             System.out.println(2);
         if (a != c && a == b)
             System.out.println(3);
-        if (a != c && b == c)
-            System.out.println(1);
     }
 }

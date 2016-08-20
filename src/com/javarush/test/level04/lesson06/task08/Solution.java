@@ -14,8 +14,6 @@ package com.javarush.test.level04.lesson06.task08;
 Пример для чисел -6 -6:
 3
 */
-
-import java.io.*;
 import java.util.Scanner;
 
 public class Solution {

@@ -14,16 +14,13 @@ import java.util.Scanner;
 абв
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
         int a = scanner.nextInt();
 
-        while (a > 0)
-        {
+        while (a > 0) {
             System.out.println(name);
             a--;
         }

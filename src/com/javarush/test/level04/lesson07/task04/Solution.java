@@ -24,18 +24,22 @@ public class Solution {
 
         int negative = 0;
         int positive = 0;
+
         if (a > 0 )
             positive++;
         else
             negative++;
+
         if (b > 0)
             positive++;
         else
             negative++;
+
         if (c > 0)
             positive++;
         else
             negative++;
+
         System.out.println("количество отрицательных чисел: " + negative);
         System.out.println("количество положительных чисел: " + positive);
     }

@@ -7,17 +7,14 @@ import java.io.*;
 Буквы в каждой строке не разделять.
 */
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         String s = "SSSSSSSSSS";
         int a = 1;
-        while (a <= 10)
-        {
+
+        while (a <= 10) {
             System.out.println(s);
             a++;
         }
-
     }
 }

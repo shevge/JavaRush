@@ -18,42 +18,26 @@ package com.javarush.test.level04.lesson07.task02;
 import java.io.*;
 import java.util.Scanner;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
 
-        if (((a % 2) == 0) && (a >= 0) && (a <= 9))
-            System.out.println("четное однозначное число");
-        else
-        {
-            {
-                if (((a % 1) == 0) && (a > 0) && (a <= 9))
-                    System.out.println("нечетное однозначное число");
-            }
+        if (a % 2 == 0) {
+            if ((a >= 0) && (a <= 9))
+                System.out.println("четное однозначное число");
+            if ((a >= 10) && (a <= 99))
+                System.out.println("четное двухзначное число");
+            if ((a >= 100) && (a <= 999))
+                System.out.println("четное трёхначное число");
+        } else {
+            if ((a >= 0) && (a <= 9))
+                System.out.println("нечетное однозначное число");
+            if ((a >= 10) && (a <= 99))
+                System.out.println("нечетное двухзначное число");
+            if ((a >= 100) && (a <= 999))
+                System.out.println("нечетное трёхначное число");
         }
-        if (((a % 2) == 0) && (a >= 10) && (a <= 99))
-            System.out.println("четное двузначное число");
-        else
-        {
-            {
-                if (((a % 1) == 0) && (a >= 10) && (a <= 99))
-                    System.out.println("нечетное двузначное число");
-            }
-        }
-        if (((a % 2) == 0) && (a >= 100) && (a <= 999))
-            System.out.println("четное трехзначное число");
-        else
-        {
-            {
-                if (((a % 1) == 0) && (a >= 100) && (a <= 999))
-                    System.out.println("нечетное трехзначное число");
-            }
-        }
-         if (a >= 1000)
-             System.out.println();
     }
 }
 

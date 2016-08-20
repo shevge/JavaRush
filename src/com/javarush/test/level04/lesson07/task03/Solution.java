@@ -11,41 +11,21 @@ package com.javarush.test.level04.lesson07.task03;
 import java.io.*;
 import java.util.Scanner;
 
-public class Solution
-{
-    public static void main(String[] args) throws Exception
-    {
+public class Solution {
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
 
-        int negative = 0;
         int positive = 0;
-        if (a > 0 )
+        if (a > 0)
             positive++;
         if (b > 0)
             positive++;
         if (c > 0)
             positive++;
+
         System.out.println(positive);
-
-
-        /*
-        if (a > 0 && b > 0 && c > 0)
-            System.out.println(3);
-        if (a > 0 && b > 0 && c < 0)
-            System.out.println(2);
-        if (a > 0 && b < 0 && c < 0)
-            System.out.println(1);
-        if (a < 0 && b < 0 && c < 0)
-            System.out.println(0);
-        if (a > 0 && b < 0 && c > 0)
-            System.out.println(2);
-        if (a < 0 && b < 0 && c > 0)
-            System.out.println(1);
-        if (a > 0 && b > 0 && c < 0)
-            System.out.println(1);
-            */
     }
 }

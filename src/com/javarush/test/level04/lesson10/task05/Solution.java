@@ -12,23 +12,19 @@ import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
+        int line = 1;   // строка
+        int column = 1; // колонна
 
-        //line - строка
-        //column - столбец
-        int line = 1;
-        int colume = 1;
-        while (line <= 10)
-        {
-            colume = 1;
-            while (colume <= 10)
-            {
-                if (colume == 10)
-                    System.out.println(line * colume + " ");
-                else
-                    System.out.print(line * colume + " ");
-                colume++;
+        while (line <= 10) {
+            column = 1;
+
+            while (column <= 10) {
+                System.out.print(line * column + "\t");
+                column++;
             }
+
             line++;
+            System.out.println();
         }
     }
 }
